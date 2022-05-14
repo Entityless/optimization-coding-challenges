@@ -24,4 +24,12 @@ for (int pool_id = 0; pool_id < pool_count; pool_id++) {
 
 ```
 
-Your are given `buckets` memset to 0, `pools` with random floating-point numbers, and theee arrays of `vector` format (SoA) representing the array of `tuple<bucket_id, pool_offset, bucket_offset>` (AoS). Since the operation of each pool is identical, you can do optimization on the reduction sequence using this feature. Also, the multi-thread hardware feature is also encouraged to be utilized.
+Your are given `buckets` memset to 0, `pools` with random floating-point numbers, and theee arrays of `vector` format (SoA) representing the array of `tuple<bucket_id, pool_offset, bucket_offset>` (AoS). Since the operation of each pool is identical, you can do optimization on the reduction sequence using this feature. Also, the multi-thread hardware feature is also encouraged to be utilized. You task is to optimize the function `optimized_accumulation`, and guarantee the `diff sum` is or near 0.
+
+Example output:
+
+```
+STD Elapsed = 14.135021
+OPT Elapsed = 13.709532
+diff sum = 0.000000
+```
