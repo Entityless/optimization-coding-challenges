@@ -1,0 +1,1 @@
+add_executable(00_bucket_accumulator_cpu 00_bucket_accumulator_cpu.cpp)
