@@ -18,7 +18,7 @@ for (int pool_id = 0; pool_id < pool_count; pool_id++) {
         bucket_id = t.bucket_id;
         pool_offset = t.pool_offset;
         bucket_offset = t.bucket_offset;
-        pools[pool_id][pool_offset] = buckets[bucket_id][bucket_offset];
+        pools[pool_id][pool_offset] += buckets[bucket_id][bucket_offset];
     }
 }
 
